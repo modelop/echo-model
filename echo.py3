@@ -1,5 +1,3 @@
-# fastscore.input: string
-# fastscore.output: string
-
+#modelop.score
 def action(datum):
     yield(datum)
