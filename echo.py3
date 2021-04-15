@@ -1,6 +1,12 @@
-# modelop.schema.0: input_schema.avsc
-# modelop.schema.1: output_schema.avsc
+// Echo model
+#modelop.init
+def begin():
+    pass
 
 #modelop.score
 def action(datum):
-    yield(datum)
+    yield datum
+
+#modelop.metrics
+def metrics(data):
+    yield dict(toy="output")
