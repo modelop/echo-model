@@ -1,4 +1,4 @@
-// Echo model
+#Echo model
 #modelop.init
 def begin():
     pass
