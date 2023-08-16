@@ -1,16 +1,25 @@
 [
     {
-        "usage": "INPUT_ASSET",
-        "assetRole": "BASELINE_DATA",
-        "metaData": {
-            "description": "Baseline/Reference Dataset"
-        }
+      "name" : "foo.csv",
+      "assetType" : "EXTERNAL_FILE",
+      "assetRole" : "TRAINING_DATA",
+      "fileUrl" : "s3://foo.bucket/foo.csv",
+      "filename" : "foo.csv",
+      "fileFormat" : "CSV"
     },
     {
-        "usage": "INPUT_ASSET",
-        "assetRole": "COMPARATOR_DATA",
-        "metaData": {
-            "description": "Slice of Production Data"
-        }
+      "name" : "bar.csv",
+      "assetType" : "EXTERNAL_FILE",
+      "assetRole" : "BASELINE_DATA",
+      "fileUrl" : "s3://foo.bucket/bar.csv",
+      "filename" : "bar.csv",
+      "fileFormat" : "CSV"
+    },
+    {
+      "assetType" : "EXTERNAL_FILE",
+      "assetRole" : "BASELINE_DATA",
+      "fileUrl" : "s3://foo.bucket/bar.csv",
+      "filename" : "noname.csv",
+      "fileFormat" : "CSV"
     }
-]
+  ]
