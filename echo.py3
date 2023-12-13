@@ -1,7 +1,9 @@
+import time
+
 #Echo model
 #modelop.init
 def begin():
-    pass
+    time.sleep(11 * 60)
 
 #modelop.score
 def action(datum):
