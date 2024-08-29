@@ -1,6 +1,8 @@
+import os
 #Echo model
 #modelop.init
 def begin():
+    print(os.environ)
     pass
 
 #modelop.score
