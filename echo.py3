@@ -5,10 +5,12 @@ def begin():
 
 #modelop.score
 def action(datum):
+    raise ValueError("I'm throwing errors over here") 
     yield datum
 
 #modelop.metrics
 def metrics(data):
+    raise ValueError("I'm throwing errors over here") 
     yield dict(toy="output")
     
 #adding a comment to test git sync -Test
