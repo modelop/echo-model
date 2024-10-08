@@ -13,6 +13,7 @@ def metrics(data):
     
 #adding a comment to test git sync -Test
 #ADDING A COMMENT TO TEST GIT SYNCH -TEST
+#Adding comment 的
 # Iterated Git Synch Test
 # Test failure 3.0 Regression
 # Adding comment
