@@ -8,7 +8,7 @@ def action(datum):
     yield datum
 
 #modelop.metrics
-def metrics(data):
+def metrics():
     yield dict(toy="output")
     
 #adding a comment to test git sync -Test
