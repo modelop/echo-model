@@ -1,6 +1,10 @@
+import os
+import json
+import pandas as pd
 #Echo model
 #modelop.init
 def begin():
+    print(os.environ)
     pass
 
 #modelop.score
@@ -9,9 +13,8 @@ def action(datum):
 
 #modelop.metrics
 def metrics(data):
-    yield dict(toy="output")
-    
-#adding a comment to test git sync -Test
-#ADDING A COMMENT TO TEST GIT SYNCH -TEST
-# Iterated Git Synch Test
-# Test failure 3.0 Regression
+    dict_data = data.to_dict(orient='records')
+    json_string = json.dumps(dict_data)
+    with open('/tmp/dataframe.json', 'w') as file:
+        json.dump(dict_data, file, indent=4)
+    yield dict_data
