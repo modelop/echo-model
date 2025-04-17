@@ -5,13 +5,8 @@ def begin():
 
 #modelop.score
 def action(datum):
-    yield datum
+    print(datum)
 
 #modelop.metrics
 def metrics(data):
-    yield dict(toy="output")
-    
-#adding a comment to test git sync -Test
-#ADDING A COMMENT TO TEST GIT SYNCH -TEST
-# Iterated Git Synch Test
-# Test failure 3.0 Regression
+    print(dict(toy="output"))
