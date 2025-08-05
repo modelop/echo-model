@@ -1,5 +1,5 @@
 import datetime
- import numpy as np 
+import numpy as np 
 
 #Echo model
 #modelop.init
