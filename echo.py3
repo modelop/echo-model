@@ -1,3 +1,6 @@
+import datetime
+ import numpy as np 
+
 #Echo model
 #modelop.init
 def begin():
@@ -9,9 +12,6 @@ def action(datum):
 
 #modelop.metrics
 def metrics(data):
-    yield dict(toy="output")
-    
-#adding a comment to test git sync -Test
-#ADDING A COMMENT TO TEST GIT SYNCH -TEST
-# Iterated Git Synch Test
-# Test failure 3.0 Regression
+    arr = np.array([1, 2, 3, 4, 5])
+    to_be_yielded = {"test_date": datetime.datetime.now(), "test_ndarray": arr}
+    yield to_be_yielded
