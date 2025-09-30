@@ -3,7 +3,6 @@ import os
 #modelop.init
 def begin():
     print(os.environ)
-    pass
 
 #modelop.score
 def action(datum):
