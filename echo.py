@@ -9,7 +9,8 @@ def action(datum):
 
 #modelop.metrics
 def metrics(data):
-    yield dict(toy="output")
+    data = pd.DataFrame(data)
+    yield data.to_dict(orient="records")
     
 #adding a comment to test git sync -Test
 #ADDING A COMMENT TO TEST GIT SYNCH -TEST
