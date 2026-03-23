@@ -5,8 +5,9 @@ def begin():
 
 #modelop.score
 def action(datum):
+    print(datum)
     if "testing" in datum.keys():
-        raise ValueError("Bad Keys)
+        raise ValueError("Bad Keys")
     else:
         yield datum               
 
