@@ -5,7 +5,10 @@ def begin():
 
 #modelop.score
 def action(datum):
-    yield datum
+    if "testing" in datum.keys():
+        raise ValueError("Bad Keys)
+    else:
+        yield datum               
 
 #modelop.metrics
 def metrics(data):
